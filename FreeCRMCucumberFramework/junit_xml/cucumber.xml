@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="33.749802">
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test scenario" time="22.624705">
+<system-out><![CDATA[Given User is already on login screen.......................................passed
+Then User checks for title of login screen..................................passed
+Then User enters "naveenk" and "test@123"...................................passed
+Then clicks on Login Button.................................................passed
+Then user is now on home page...............................................passed
+Then user close the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test scenario 2" time="11.125097">
+<failure message="org.junit.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM software in the cloud for sales and service]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:115)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:144)&#13;&#10;&#9;at StepDefinition.LoginStepDefinition.user_is_now_on_home_page(LoginStepDefinition.java:57)&#13;&#10;&#9;at ✽.Then user is now on home page(login.feature:13)&#13;&#10;"><![CDATA[Given User is already on login screen.......................................passed
+Then User checks for title of login screen..................................passed
+Then User enters "tom" and "test456"........................................passed
+Then clicks on Login Button.................................................passed
+Then user is now on home page...............................................failed
+Then user close the browser.................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[CRMPRO]> but was:<[#1 Free CRM software in the cloud for sales and service]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at StepDefinition.LoginStepDefinition.user_is_now_on_home_page(LoginStepDefinition.java:57)
+	at ✽.Then user is now on home page(login.feature:13)
+]]></failure>
+</testcase>
+</testsuite>
